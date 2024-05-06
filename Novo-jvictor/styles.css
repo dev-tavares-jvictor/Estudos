@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+header{
+    background-color: #101026;
+}
+li{
+    list-style: none;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+.navbar{
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 34px;
+}
+.logo{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+.nav-link{
+    transition: 0.5s;
+}
+.nav-link:hover{
+    color: #0088d2;
+}
+.bru{
+    display: none;
+    cursor: pointer;
+}
+.nik{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 5px auto;
+    background: #fff;
+    transition: all 0.3s ease-in-out;
+}
+@media (max-width:768px){
+    .bru{
+        display: block;
+    }
+    .bru.active .nik:nth-child(2){
+        opacity: 0;
+    }
+    .bru.active .nik:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .bru.active .nik:nth-child(1){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        border-radius: 0 20px 20px;
+        background-color: #101026;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        transition: 2s;
+    }
+    .nav-item{
+        margin: 16px 0;
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+}
+main section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 10rem;
+}
+.main-text img{
+    width: 15rem;
+    margin-bottom: 3vh;
+}
+.main-text h3{
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+.main-text p{
+    margin-bottom: 1.5rem;
+}
+.main-text h6{
+    color: #999;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+.main-text .btn{
+    padding: 10px 25px;
+    background: #0071e3;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 1.5rem;
+    transition: all 0.5s;
+}
+.main-text .btn:hover{
+    opacity: .85;
+}
+.main-text .text h5{
+    font-size: 1rem;
+    color: #444;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.main-text .content{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.main-text .content span{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 1px 1px #888;
+    transition: all 0.5s;
+}
+.main-text .content span:hover{
+    opacity: .80;
+}
+#safari{
+    background: #000000;
+}
+#convidado{
+    background: #000000;
+}
+.main-img{
+    transition: all 1s ease;
+    z-index: 100;
+}
+.main-img img{
+    width: 520px;
+    transform: rotate(-7deg);
+    border-radius: 40px;
+}
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #30ac24;
+    clip-path: circle(800px at right 950px);
+}
+section .titulo-empresa h1{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
