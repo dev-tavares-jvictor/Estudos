@@ -160,8 +160,3 @@ main section{
     background: #30ac24;
     clip-path: circle(800px at right 950px);
 }
-section .titulo-empresa h1{
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
