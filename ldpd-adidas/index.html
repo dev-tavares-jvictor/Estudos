@@ -27,12 +27,41 @@
         <section>
             <div class="circle"></div>
             <div class="main-text">
-                <img src="images/azul.png" alt="01">
+                <img src="images/Adidas-Logo.png" alt="01">
                 <h3>UM NOVO CONFORTO</h3>
+                <p>Conforto e desempenho em um só tênis. Com tecnologia de amortecimento Boost e design em malha Primeknit, oferece ajuste perfeito e retorno de energia a cada passo. Ideal para corridas e uso casual.</p>
+                <h6>Apenas R$ 600</h6>
+                <a href="#" class="btn">Comprar</a>
+                <div class="text">
+                    <h5>Escolha sua cor</h5>
+                </div>
+                <div class="content">
+                    <span id="azul" onclick="imgSlider('images/azul.png'); circleChange('#179df1')"></span>
+                    <span id="preto" onclick="imgSlider('images/preto.png'); circleChange('#222222')"></span>
+                    <span id="roxo" onclick="imgSlider('images/roxo.png'); circleChange('#5823a9')"></span>
+                    <span id="cinza" onclick="imgSlider('images/cinza.png'); circleChange('#7c7c7c')"></span>
+                    <span id="branco" onclick="imgSlider('images/branco.png');circleChange('#fff')"></span>
+                </div>
+            </div>
+
+            <div class="main-img">
+                <img src="images/azul.png" alt="01" id="tenis">
+
             </div>
 
         </section>
     </main>
+
+    <script type="text/javascript">
+        function imgSlider(e){
+            document.querySelector('#tenis').src = e;
+        }
+        function circleChange(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+
+    </script>
     
 </body>
 </html>
